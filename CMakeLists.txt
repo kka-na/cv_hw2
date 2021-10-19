@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project( hw2 )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( hw2 hw2.cpp )
+target_link_libraries( hw2 ${OpenCV_LIBS} )
